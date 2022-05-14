@@ -1,0 +1,96 @@
+// palette fancyBorder : #321d0c   marron foncé
+//                       #8a6f54   beige gris 
+//                       #e3c085   beige medium
+//                       #fddea5   beige clair
+// ***************************ALL***************************
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('../img/rpg_bg.jpg');
+    background-position: 60% 30%;
+    background-attachment: fixed;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.height-web {
+    height: -webkit-fill-available;
+}
+
+.border-bottom {
+    border-bottom: 1px dashed black;
+}
+
+// ***************************HEADER***************************
+header {
+    .formContainer {
+        // a modifier suite a register (display:hidden)
+        padding: 15px;
+    }
+}
+
+.registerForm {
+    display: flex;
+    justify-content: space-between;
+    label {
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+// ***************************MAIN***************************
+.fancy-border {
+    border: 25px solid #B88846;
+    border-image: url("../assets/fancy_border.svg") 25;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70%; // a modifier suite a register
+    height: 60vh; // a modifier suite a register
+    position: fixed;
+    top: 20%; // a modifier suite a register
+    left: 15%; // a modifier suite a register
+}
+
+.border-register {
+    width: 270px;
+    height: 390px;
+    top: 5%;
+    left: initial;
+    right: 5%;
+}
+
+.idCharacter {
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(253, 222, 165, 0.5);
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0;
+        margin: 5px 5px;
+        color: black;
+        text-align: center;
+        font-size: 20px; // border-bottom: 1px dashed black; // a remettre suite a register
+    }
+    div:nth-last-child(1) {
+        border-bottom: none;
+    }
+}
+
+#slimeBox {
+    animation: functionName 0.5s steps(9);
+    background-size: auto;
+    background: url('./assets/slime_blue.png') left top;
+    background-repeat: no-repeat;
+}

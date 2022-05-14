@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div id="formContainer" class="formContainer">
+            <form class="registerForm" id="registerForm" name="userCharacterForm" method="get">
+                <label for="userName">What's your name ?</label>
+                <input type="name" name="" id="userName" />
+
+                <label for="userClassSelection">Pick your class</label>
+                <select class="form-select" id="userClassSelection" name="userClassSelection" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="Warrior">Warrior</option>
+                  <option value="Wizard">Wizard</option>
+                  <option value="Archer">Archer</option>
+                 </select>
+                <button id="ngBtn" type="submit">New Game</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div id="fancy-border" class="fancy-border">
+            <div class="idCharacter height-web" id="idCharacter">
+                <div class="job stats height-web" id="idJob">
+                    <p class="idItem">Welcome to the<br> Worst RPG</p>
+                </div>
+                <div class="name stats height-web" id="idName">
+                    <p class="idItem"></p>
+                </div>
+                <div class="level stats height-web" id="idLevel">
+                    <p class="idItem"></p>
+                </div>
+                <div class="hp stats height-web" id="idHp">
+                    <p class="idItem"></p>
+                </div>
+                <div class="damage stats height-web" id="Damage">
+                    <p class="idItem"></p>
+                </div>
+                <div class="extraStat stats height-web" id="idStat">
+                    <p class="idItem"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden" id="buttonArea">
+            <button id="slimeFightBtn">Fight Slime</button>
+            <button>Fight Dragon</button>
+        </div>
+
+        <div id="battlefield" class="hidden">
+            <div id="slimeBox">
+            </div>
+            <button>Attack</button>
+            <button>Defend</button>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+    <script type="text/javascript" src="js/cssModifier.js"></script>
+</body>
+
+</html>
